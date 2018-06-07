@@ -28,12 +28,11 @@
   "homepage": "https://github.com/CodiumTeam/weather-kata#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "jasmine": "^3.1.0"
   },
   "dependencies": {
-    "babel": "^6.23.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "request": "^2.87.0"
   }
