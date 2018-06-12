@@ -26,5 +26,6 @@ class Weather:
                         return result['wind_speed']
                     else:
                         return result['weather_state_name']
+            return ""
         else:
             return ""
