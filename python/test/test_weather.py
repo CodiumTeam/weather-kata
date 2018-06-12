@@ -24,3 +24,10 @@ def test_there_is_no_prediction_for_more_than_5_days():
     aWeather = Weather()
     prediction = aWeather.predict('Madrid', when)
     assert "" == prediction
+
+
+def test_there_is_no_prediction_for_past_days():
+    past_day = datetime.datetime.now() - datetime.timedelta(days=6)
+    aWeather = Weather()
+    prediction = aWeather.predict('Madrid', past_day)
+    assert "" == prediction
