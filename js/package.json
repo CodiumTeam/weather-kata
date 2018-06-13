@@ -4,7 +4,7 @@
   "description": "The goal of this kata is to identify the code smells and fix them.",
   "main": "src/forecast.js",
   "scripts": {
-    "test": "babel-node node_modules/.bin/jasmine"
+    "test": "babel-node node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {
     "type": "git",
