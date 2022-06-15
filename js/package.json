@@ -1,39 +1,29 @@
 {
   "name": "weather-kata",
   "version": "1.0.0",
-  "description": "The goal of this kata is to identify the code smells and fix them.",
-  "main": "src/forecast.js",
+  "description": "Kata to practice decoupling techniques and get fast and deterministic tests",
+  "main": " ",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
   "scripts": {
-    "test": "babel-node node_modules/jasmine/bin/jasmine.js"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "jest --coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/CodiumTeam/weather-kata.git"
-  },
-  "keywords": [
-    "kata",
-    "refactoring",
-    "code",
-    "smells",
-    "clean",
-    "code",
-    "refactor",
-    "quality"
-  ],
   "author": "Codium",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodiumTeam/weather-kata/issues"
-  },
-  "homepage": "https://github.com/CodiumTeam/weather-kata#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "jasmine": "^3.1.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^27.5.1",
+    "request": "^2.88.2",
+    "sinon": "^13.0.2"
   },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0",
-    "request": "^2.87.0"
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
   }
 }

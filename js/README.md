@@ -1,18 +1,23 @@
-# Using your node installation
+# Weather kata
+We cannot control the weather, but we can predict it.
 
-## Install the package dependencies
-    npm install
+This kata has a code that request the weather prediction from Metaweather.
 
-## Run the kata
-    npm test
+## Goal
+- Test coupled code.
+- Remove the external dependency when testing in order to make the tests repeatable and fast
 
-# Using docker
+## How to run the tests
+### With Docker
+Run `make`
 
-## Build the docker image
-    docker build -t weather .
+### Without Docker
+1. `npm install`
+2. `npm test`
 
-## Install the dependencies
-    docker run -v "$PWD":/home/weather weather npm install
+## Authors
+Luis Rovirosa [@luisrovirosa](https://www.twitter.com/luisrovirosa)
 
-## Run the kata
-    docker run -v "$PWD":/home/weather weather npm test 
+Jordi Anguela [@jordianguela](https://www.twitter.com/jordianguela)
+
+[Original repository](https://github.com/CodiumTeam/weather-kata)
